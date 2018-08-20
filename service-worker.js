@@ -17,7 +17,7 @@ const workboxSW = new WorkboxSW({
 workboxSW.precache([
   {
     "url": "/index.html",
-    "revision": "f73e7ebcf8933be7141e224e76238798"
+    "revision": "ba9dbe7d6679e253c2a32684148458d8"
   },
   {
     "url": "lavas/routes.json",
@@ -36,7 +36,7 @@ workboxSW.precache([
     "url": "/static/img/iconfont.40ed9ee9.svg"
   },
   {
-    "url": "/static/js/index.be05b817.js"
+    "url": "/static/js/index.99d0bb44.js"
   },
   {
     "url": "/static/js/manifest.7253881e.js"
