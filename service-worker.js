@@ -17,14 +17,14 @@ const workboxSW = new WorkboxSW({
 workboxSW.precache([
   {
     "url": "/index.html",
-    "revision": "f3999266a8b254ea4f3053d9d2e4c23e"
+    "revision": "f73e7ebcf8933be7141e224e76238798"
   },
   {
     "url": "lavas/routes.json",
     "revision": "b1cc0543f07765df0d7eb253ac072530"
   },
   {
-    "url": "/static/css/index.a14c80d6.css"
+    "url": "/static/css/index.61fe3725.css"
   },
   {
     "url": "/static/fonts/iconfont.7300023d.ttf"
@@ -36,7 +36,7 @@ workboxSW.precache([
     "url": "/static/img/iconfont.40ed9ee9.svg"
   },
   {
-    "url": "/static/js/index.545a8f47.js"
+    "url": "/static/js/index.be05b817.js"
   },
   {
     "url": "/static/js/manifest.7253881e.js"
