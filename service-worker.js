@@ -17,14 +17,10 @@ const workboxSW = new WorkboxSW({
 workboxSW.precache([
   {
     "url": "/index.html",
-    "revision": "ba9dbe7d6679e253c2a32684148458d8"
+    "revision": "8ae9cd46388d8407d7104c97787217ae"
   },
   {
-    "url": "lavas/routes.json",
-    "revision": "b1cc0543f07765df0d7eb253ac072530"
-  },
-  {
-    "url": "/static/css/index.61fe3725.css"
+    "url": "/static/css/index.9cb4bc2a.css"
   },
   {
     "url": "/static/fonts/iconfont.7300023d.ttf"
@@ -36,13 +32,13 @@ workboxSW.precache([
     "url": "/static/img/iconfont.40ed9ee9.svg"
   },
   {
-    "url": "/static/js/index.99d0bb44.js"
+    "url": "/static/js/index.a5d31ed8.js"
   },
   {
     "url": "/static/js/manifest.7253881e.js"
   },
   {
-    "url": "/static/js/vendor.c97e933b.js"
+    "url": "/static/js/vendor.9b22a1ea.js"
   },
   {
     "url": "/static/js/vue.b155477c.js"
@@ -50,10 +46,6 @@ workboxSW.precache([
   {
     "url": "/static/js/workbox-sw.prod.v2.1.3.js",
     "revision": "a9890beda9e5f17e4c68f42324217941"
-  },
-  {
-    "url": "/static/manifest.json",
-    "revision": "bbcf250c15f682b1a7a0e43cf70306f7"
   }
 ]);
 workboxSW.router.registerNavigationRoute('/index.html');
