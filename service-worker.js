@@ -17,7 +17,7 @@ const workboxSW = new WorkboxSW({
 workboxSW.precache([
   {
     "url": "/index.html",
-    "revision": "17b82b84ae0952c12776c1b4ec873593"
+    "revision": "f3999266a8b254ea4f3053d9d2e4c23e"
   },
   {
     "url": "lavas/routes.json",
@@ -36,7 +36,7 @@ workboxSW.precache([
     "url": "/static/img/iconfont.40ed9ee9.svg"
   },
   {
-    "url": "/static/js/index.9ed4ec54.js"
+    "url": "/static/js/index.545a8f47.js"
   },
   {
     "url": "/static/js/manifest.7253881e.js"
@@ -62,32 +62,32 @@ workboxSW.router.registerNavigationRoute('/index.html');
 /**
  * example runningCache with api
  */
-workboxSW.router.registerRoute(/^https:\/\/jgsuapi\.xiaoliublog\.cn:50080/,
+workboxSW.router.registerRoute(/^https:\/\/jgsu\.xiaoliublog\.cn:50080/,
     workboxSW.strategies.cacheFirst({
         cacheableResponse: {
             statuses: [0, 200]
         }
     }));
 
-workboxSW.router.registerRoute(new RegExp('https://jgsuapi.xiaoliublog.cn:50080/api_v1/get_baseinfo'),
+workboxSW.router.registerRoute(new RegExp('https://jgsu.xiaoliublog.cn:50080/api_v1/get_baseinfo'),
     workboxSW.strategies.cacheFirst({
         cacheableResponse: {
             statuses: [0, 200]
         }
     }));
-workboxSW.router.registerRoute(new RegExp('https://jgsuapi.xiaoliublog.cn:50080/api_v1/auth'),
+workboxSW.router.registerRoute(new RegExp('https://jgsu.xiaoliublog.cn:50080/api_v1/auth'),
     workboxSW.strategies.cacheFirst({
         cacheableResponse: {
             statuses: [0, 200]
         }
     }));
-workboxSW.router.registerRoute(new RegExp('https://jgsuapi.xiaoliublog.cn:50080/api_v1/get_score'),
+workboxSW.router.registerRoute(new RegExp('https://jgsu.xiaoliublog.cn:50080/api_v1/get_score'),
     workboxSW.strategies.cacheFirst({
         cacheableResponse: {
             statuses: [0, 200]
         }
     }));
-workboxSW.router.registerRoute(new RegExp('https://jgsuapi.xiaoliublog.cn:50080/api_v1/get_all_class'),
+workboxSW.router.registerRoute(new RegExp('https://jgsu.xiaoliublog.cn:50080/api_v1/get_all_class'),
     workboxSW.strategies.cacheFirst({
         cacheableResponse: {
             statuses: [0, 200]
