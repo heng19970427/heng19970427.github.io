@@ -17,7 +17,7 @@ const workboxSW = new WorkboxSW({
 workboxSW.precache([
   {
     "url": "/index.html",
-    "revision": "b70160f6025ca9e69a656e74034955ef"
+    "revision": "17b82b84ae0952c12776c1b4ec873593"
   },
   {
     "url": "lavas/routes.json",
@@ -36,7 +36,7 @@ workboxSW.precache([
     "url": "/static/img/iconfont.40ed9ee9.svg"
   },
   {
-    "url": "/static/js/index.be6db672.js"
+    "url": "/static/js/index.9ed4ec54.js"
   },
   {
     "url": "/static/js/manifest.7253881e.js"
@@ -62,34 +62,32 @@ workboxSW.router.registerNavigationRoute('/index.html');
 /**
  * example runningCache with api
  */
-// workboxSW.router.registerRoute(new RegExp('http://jgsuapi\.xiaoliublog\.cn:50080/api_v1/*'),
-//     workboxSW.strategies.cacheFirst());
-workboxSW.router.registerRoute(/^http:\/\/localhost:50080/,
+workboxSW.router.registerRoute(/^https:\/\/jgsuapi\.xiaoliublog\.cn:50080/,
     workboxSW.strategies.cacheFirst({
         cacheableResponse: {
             statuses: [0, 200]
         }
     }));
 
-workboxSW.router.registerRoute(new RegExp('http://localhost:50080/api_v1/get_baseinfo'),
+workboxSW.router.registerRoute(new RegExp('https://jgsuapi.xiaoliublog.cn:50080/api_v1/get_baseinfo'),
     workboxSW.strategies.cacheFirst({
         cacheableResponse: {
             statuses: [0, 200]
         }
     }));
-workboxSW.router.registerRoute(new RegExp('http://localhost:50080/api_v1/auth'),
+workboxSW.router.registerRoute(new RegExp('https://jgsuapi.xiaoliublog.cn:50080/api_v1/auth'),
     workboxSW.strategies.cacheFirst({
         cacheableResponse: {
             statuses: [0, 200]
         }
     }));
-workboxSW.router.registerRoute(new RegExp('http://localhost:50080/api_v1/get_score'),
+workboxSW.router.registerRoute(new RegExp('https://jgsuapi.xiaoliublog.cn:50080/api_v1/get_score'),
     workboxSW.strategies.cacheFirst({
         cacheableResponse: {
             statuses: [0, 200]
         }
     }));
-workboxSW.router.registerRoute(new RegExp('http://localhost:50080/api_v1/get_all_class'),
+workboxSW.router.registerRoute(new RegExp('https://jgsuapi.xiaoliublog.cn:50080/api_v1/get_all_class'),
     workboxSW.strategies.cacheFirst({
         cacheableResponse: {
             statuses: [0, 200]
