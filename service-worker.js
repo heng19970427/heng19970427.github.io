@@ -17,7 +17,11 @@ const workboxSW = new WorkboxSW({
 workboxSW.precache([
   {
     "url": "/index.html",
-    "revision": "8ae9cd46388d8407d7104c97787217ae"
+    "revision": "e88d800674c1379e83aded5015407b41"
+  },
+  {
+    "url": "lavas/routes.json",
+    "revision": "b1cc0543f07765df0d7eb253ac072530"
   },
   {
     "url": "/static/css/index.9cb4bc2a.css"
@@ -32,7 +36,7 @@ workboxSW.precache([
     "url": "/static/img/iconfont.40ed9ee9.svg"
   },
   {
-    "url": "/static/js/index.a5d31ed8.js"
+    "url": "/static/js/index.04041b8e.js"
   },
   {
     "url": "/static/js/manifest.7253881e.js"
@@ -46,6 +50,10 @@ workboxSW.precache([
   {
     "url": "/static/js/workbox-sw.prod.v2.1.3.js",
     "revision": "a9890beda9e5f17e4c68f42324217941"
+  },
+  {
+    "url": "/static/manifest.json",
+    "revision": "bbcf250c15f682b1a7a0e43cf70306f7"
   }
 ]);
 workboxSW.router.registerNavigationRoute('/index.html');
